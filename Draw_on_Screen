@@ -1,0 +1,21 @@
+
+10 rem draw on screen
+12 rem 10/22/16 - sm
+15 :
+20 printchr$(147):poke53281,0:poke53280,
+6
+30 forx=1242to1242+40*1 step 40
+40 pokex,81:pokex+54272,2
+50 next
+60 forx=1321to1321+40*2 step 40
+70 pokex,81:pokex+2,81
+75 pokex+54272,1:pokex+2+54272,1
+80 next
+90 poke1362,81:poke1402,81
+95 poke1362+54272,1:poke1402+54272,1
+100 forx=1400to1400+40*3 step 40
+110 pokex,81:pokex+4,81
+115 pokex+54272,13:pokex+4+54272,13
+120 next
+130 poke1402,81
+135 poke1402+54272,4
